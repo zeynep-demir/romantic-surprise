@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ne Kadar Çok Seviyorsun?</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Peki, Ne Kadar Çok Seviyorsun? ❤️</h1>
+
+        <div class="tenor-gif-embed" data-postid="157714405805720280" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/cute-cat-kawaii-nina-minina-smile-cute-gif-157714405805720280">Cute Cat Kawaii Sticker</a>from <a href="https://tenor.com/search/cute+cat-stickers">Cute Cat Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        
+        <!-- Seçim Çubuğu -->
+        <input type="range" id="love-range" min="0" max="100" value="0" oninput="updateValue(this.value)">
+        <p>Sevgi Seviyesi: <span id="range-value">0</span></p>
+        
+        <!-- Onay Butonu -->
+        <button onclick="checkLoveLevel()">Gönder</button>
+    </div>
+
+    <script>
+        // Sevgi seviyesini güncelleme
+        function updateValue(value) {
+            document.getElementById('range-value').textContent = value;
+        }
+
+        // Sevgi seviyesini kontrol etme
+        function checkLoveLevel() {
+            const level = document.getElementById('love-range').value;
+            if (level == 100) {
+                window.location.href = 'love-max.html'; // 100'e ulaşıldığında yönlendirme
+            } else {
+                window.location.href = 'not-enough.html'; // Diğer durumlar için yönlendirme
+            }
+        }
+    </script>
+</body>
+</html>

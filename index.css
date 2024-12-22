@@ -1,0 +1,170 @@
+/* Genel ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f0, #ffcce6); /* Pastel pembe degrade */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Sevgi seçim çubuğu */
+input[type="range"] {
+    width: 80%;
+    margin: 20px 0;
+    -webkit-appearance: none;
+    background: #ff6699;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff3385;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ff3385;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Beyaz kutu */
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff6699; /* Romantik pembe */
+    margin-bottom: 20px;
+}
+
+.tenor-gif-embed {
+    margin: 20px auto;
+    max-width: 300px; /* GIF boyutu */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yes-button {
+    background-color: #ff6699;
+    color: white;
+}
+
+.no-button {
+    background-color: #cccccc;
+    color: #333;
+}
+
+button:hover {
+    transform: translateY(-3px); /* Hafif hareket */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hover gölgesi */
+}
+
+.yes-button:hover {
+    background-color: #ff3385;
+}
+
+.no-button:hover {
+    background-color: #999999;
+}
+
+
+/* Genel Sayfa Tasarımı */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6e6, #ffcce6); /* Pastel pembe degrade */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden; /* Animasyon alanını sınırlamak için */
+}
+
+.container {
+    margin-top: 20vh; /* Sayfa ortasına doğru */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff6699; /* Romantik pembe */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+}
+
+.center-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+/* Gül Yaprakları */
+#falling-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Tıklanabilirliği kapatır */
+}
+
+.leaf {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('rose-petals.png'); /* Gül yaprağı resmi */
+    background-size: cover;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* Animasyon */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
